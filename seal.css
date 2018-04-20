@@ -1,0 +1,11 @@
+.seal {
+    display: inline-block;
+}
+nav .seal {
+    width: 16px;
+    margin-right: 4px;
+}
+.main .seal {
+    width: 48px;
+    margin-right: 12px;
+}
