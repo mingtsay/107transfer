@@ -5,15 +5,15 @@
                 length = transfer.length
             for (var i = 0; i < length; ++i) {
                 var school = transfer[i],
+                    space = _C('div'),
                     container = _C('div'),
                     school_seal = _C('img'),
                     school_name = _T(school.name),
                     school_published = _C('span'),
                     school_title = _C('h3'),
-                    school_title_container = _C('div'),
-                    space = _C('div')
+                    school_title_container = _C('div')
 
-                container.id = school.id
+                container.id = 'container-' + school.id
                 container.className = 'school school-' + school.id
 
                 school_seal.alt = school.name
@@ -102,8 +102,9 @@
                     container.appendChild(table)
                 }
 
-                space.className = 'space-50'
-                container.appendChild(space)
+                space.className = 'space-70'
+                space.id = school.id
+                t.appendChild(space)
                 t.appendChild(container)
             }
         })
