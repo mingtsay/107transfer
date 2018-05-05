@@ -33,7 +33,9 @@
                     var table = _C('table'), table_body = _C('tbody'),
                         price = _C('tr'), price_head = _C('th'), price_content = _C('td'),
                         regist = _C('tr'), regist_head = _C('th'), regist_content = _C('td'),
-                        tests = _C('tr'), tests_head = _C('th'), tests_content = _C('td')
+                        tests = _C('tr'), tests_head = _C('th'), tests_content = _C('td'),
+                        result = _C('tr'), result_head = _C('th'), result_content = _C('td'),
+                        signup = _C('tr'), signup_head = _C('th'), signup_content = _C('td')
 
                     price_head.textContent = '報名費用'
                     price_content.textContent = 'NT$' + school.price.toFixed().replace(/\d(?=(\d{3})+$)/g, '$&,')
@@ -86,7 +88,6 @@
                             test_row.appendChild(test_content)
                             grade_table_body.appendChild(test_row)
                         }
-
                         grade_table.style.float = 'left'
                         grade_table.appendChild(grade_table_body)
                         tests_content.appendChild(grade_table)
@@ -96,6 +97,18 @@
                     tests.appendChild(tests_head)
                     tests.appendChild(tests_content)
                     table_body.appendChild(tests)
+
+                    result_head.textContent = '錄取放榜'
+                    result_content.textContent = school.result.date
+                    result.appendChild(result_head)
+                    result.appendChild(result_content)
+                    table_body.appendChild(result)
+
+                    signup_head.textContent = '報到註冊'
+                    signup_content.textContent = school.signup.from + ' 至 ' + school.signup.to
+                    signup.appendChild(signup_head)
+                    signup.appendChild(signup_content)
+                    table_body.appendChild(signup)
 
                     table.className = 'table table-responsive'
                     table.appendChild(table_body)
