@@ -60,7 +60,20 @@
     {
         "id": "ntnu",
         "name": "國立臺灣師範大學",
-        "published": false
+        "published": true,
+        "price": 1300,
+        "registration": {
+            "from": "107/05/30 09:00",
+            "to": "107/06/05 17:00"
+        },
+        "grade": {},
+        "result": {
+            "date": "107/07/26"
+        },
+        "signup": {
+            "from": "107/07/30",
+            "to": "107/08/02"
+        }
     },
     {
         "id": "ttu",
