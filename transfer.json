@@ -78,7 +78,67 @@
     {
         "id": "ttu",
         "name": "大同大學",
-        "published": false
+        "published": true,
+        "price": 1300,
+        "registration": {
+            "from": "107/05/28 00:00",
+            "to": "107/06/29 23:00"
+        },
+        "grade": {
+            "second": {
+                "date": "107/07/05",
+                "qualify": 3,
+                "waiting": -1,
+                "test": [
+                    {
+                        "id": "english",
+                        "name": "英文",
+                        "time": {
+                            "from": "08:40",
+                            "to": "10:00"
+                        }
+                    },
+                    {
+                        "id": "computer",
+                        "name": "計算機概論",
+                        "time": {
+                            "from": "10:30",
+                            "to": "11:50"
+                        }
+                    }
+                ]
+            },
+            "third": {
+                "date": "107/07/05",
+                "qualify": 5,
+                "waiting": -1,
+                "test": [
+                    {
+                        "id": "english",
+                        "name": "英文",
+                        "time": {
+                            "from": "08:40",
+                            "to": "10:00"
+                        }
+                    },
+                    {
+                        "id": "structure",
+                        "name": "資料結構",
+                        "time": {
+                            "from": "10:30",
+                            "to": "11:50"
+                        }
+                    }
+                ]
+            }
+        },
+        "result": {
+            "date": "107/07/12"
+        },
+        "signup": {
+            "from": "107/07/16",
+            "to": "107/07/16"
+        }
     },
     {
         "id": "fju",
